@@ -2,8 +2,8 @@
 
 <h1>MIT Portfolio</h1>
 
-<p>The purpose of this file is to:</p>
-<ol>
-  <li>showcase my programming ability</li>
-  <li>understanding of fundamental concepts</li>
-</ol>
+<p>The purpose of this file is to showcase:</p>
+<ul>
+  <li>my programming ability</li>
+  <li>my understanding of fundamental concepts</li>
+</ul>
