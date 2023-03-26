@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ally's Portfolio</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<link href="./style/style.css" rel="stylesheet">
+		<script>
+			function showModules() {
+				document.getElementById("bio").style.display = "none";
+				document.getElementById("projects").style.display = "block";
+			}
+
+			function showBio() {
+				document.getElementById("projects").style.display = "none";
+				document.getElementById("bio").style.display = "grid";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="py-3">
+				<div class="p-3">
+					<a href="#" onclick="showBio()" class="h2 p-4" style="text-decoration: none">Ally's Portfolio</a>
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+					<div class="container-fluid fs-4 fw-bold">
+						<div class="navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item px-2"><a class="nav-link link-light" href="#" onclick="showBio()">About Me</a></li>
+								<li class="nav-item px-2"><a class="nav-link link-light" href="#" onclick="showModules()">Modules</a></li>
+								<li class="nav-item px-2 dropdown">
+									<a href="#" class="nav-link dropdown-toggle link-light" id="navbar-socials" role="button" data-bs-toggle="dropdown" data-bs-target="#navbarSupportedContent" aria-expanded="false">Social Media</a>
+									<ul class="dropdown-menu bg-secondary" aria-labelledby="navbar-socials">
+										<li><a href="https://github.com/allykazam6" class="dropdown-item link-light fw-bold">Github</a></li>
+										<li><a href="https://www.linkedin.com/in/allysonmassi/" class="dropdown-item link-light fw-bold">Linkedin</a></li>
+                                        <li><a href="https://youtu.be/zV9H10KfAuM" class="dropdown-item link-light fw-bold">Youtube</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main class="container">
+				<div id="bio" class="container">
+					<h1>Welcome! I'm glad you're here.</h1>
+					<iframe src="https://www.youtube.com/embed/MBmops9JnAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<p id="p-one">Hi, I'm Ally Massi!  I'm a New England native, currently teaching English to speakers of other languages to both chilren and adults in Connecticut.  I've worked in education for the last 9 years after completing my B.S. in Secondary Education and English and my M.S. in Applied Linguistics and TESOL. I'm a longtime learner that enjoys trying something new, and I'm currently enrolled in the MIT xPro Profressional Coding Certificate Women's Cohort. I've been learning about computer programming through this course and Codecademy. I'm gaining proficiency in JavaScript, HTML, and CSS.
+					<div id="p-two">
+						<h5>Connect with me!</h5>
+						<ul>
+							<li><span>E-mail: <a href="mailto:allymassi@gmail.com">loliniel@gmail.com</a></span></li>
+							<li><span>Github: <a href="https://allykazam6.github.io/">Loliniel</a></span></li>
+							<li><span>Linkedin: <a href="https://www.linkedin.com/in/allysonmassi/">Linkedin</a></span></li>
+						</ul>
+					</div>
+				</div>
+				<div id="projects" class="container" style="display: none">
+					<div class="card mb-3">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./images/pacman.png" class="img-fluid rounded-start" alt="pacman screenshot">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<a href="https://github.com/allykazam6/Pacman" class="card-title fs-5 fw-bold">PacMen Exercise</a>
+									<p class="card-text pt-2">This is the Pacman Exercise from module 8.  By clicking on "Add Pacman", it adds a new pacman to the screen.  The button "Start Game" starts moving the Pacman across the scereen.  When they hit the left or right side of the screen, they turn around and start towards the opposite direction.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-3">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./images/eyes.png" class="img-fluid rounded-start" alt="eyes screenshot">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<a href="https://github.com/allykazam6/Eyes-Exercise" class="card-title fs-5 fw-bold">Eye Exercise</a>
+									<p class="card-text pt-2">This is the Eye Exercise.  The two eyes follow the cursor around the screen.  A random amount of time, from 500ms to 5500ms the eyes will blink.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-3">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./images/bustracker.png" class="img-fluid rounded-start" alt="bus tracker screenshot">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<a href="https://github.com/allykazam6/Real-Time-Bus-Tracker" class="card-title fs-5 fw-bold">Real Time Bus Tracker</a>
+									<p class="card-text pt-2">This is a real time bus tracker between MIT and Harvard.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
